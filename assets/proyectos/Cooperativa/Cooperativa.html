@@ -1,0 +1,147 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.S Reparaciones - Cooperativa de Mecánica de Motos</title>
+    <link rel="stylesheet" href="Cooperativa.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+
+        <header>
+            
+            <div class="logo">
+                <img src="./imagenes/taller.jpg" alt="Logo de N.S Reparaciones">
+            </div>
+            <p>
+                Nos encontramos en la <a href="https://maps.app.goo.gl/X3muzuF8goZqQyPg8" target="_blank">Ex panadería Allaman, Calle Remedios de Escalada</a>
+            </p>
+            <button id="planoBtn">Plano del taller</button>
+            <button onclick="window.location.href='Acta Constitutiva.html'" class="boton-Acta">Acta Constitutiva</button>
+            
+        </header>
+    
+        <div id="planoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closePlano">&times;</span>
+                <h3>Plano del Taller</h3>
+                <img src="plano.jpg" alt="Plano del Taller" class="plano-img">
+            </div>
+        </div>
+
+        <section class="servicios">
+            <h2>Servicios</h2>
+            <div class="tabs">
+                <button class="tab-button" onclick="showService('reparacion')">Reparaciones</button>
+                <button class="tab-button" onclick="showService('domicilio')">Servicio a Domicilio</button>
+                <button class="tab-button" onclick="showService('repuestos')">Venta de Repuestos</button>
+            </div>
+            <div class="service-content active" id="reparacion">
+                <h3>Reparaciones</h3>
+                <p>En el taller, realizamos todo tipo de reparaciones, desde mantenimiento hasta arreglos avanzados. Contamos con herramientas de calidad para garantizar un buen servicio.</p>
+            </div>
+            <div class="service-content" id="domicilio">
+                <h3>Servicio a Domicilio</h3>
+                <p>Ofrecemos servicios de reparación en el lugar donde se encuentre el cliente, con mecánicos que llevan el equipo necesario para solucionar problemas sencillos y realizar diagnósticos rápidos.</p>
+            </div>
+            <div class="service-content" id="repuestos">
+                <h3>Venta de Repuestos</h3>
+                <p>Tenemos un inventario completo de repuestos y partes de motos, con garantía, de diversas marcas y modelos, con una persona a cargo de orientar a los clientes para que elijan lo mejor para su moto.</p>
+            </div>
+        </section>
+
+        <section class="trabajadores">
+            <h2>Equipo de Trabajo</h2>
+            <ul>
+                <li><strong>Ventas de repuestos:</strong> Una persona encargada de gestionar el inventario, atender a los clientes y revisar la calidad de los repuestos.</li>
+                <li><strong>Atención al cliente:</strong> Una persona dedicada a la atención de los clientes en el taller, respondiendo preguntas y programando servicios.</li>
+                <li><strong>Reparaciones (taller y a domicilio):</strong> Tres mecánicos capacitados que realizan las reparaciones en el taller y a domicilio, ofreciendo un servicio confiable.</li>
+            </ul>
+        </section>
+
+        <section class="detalles">
+            <h2>Detalles de la Cooperativa</h2>
+
+            <div class="detalle">
+                <h3>Análisis FODA</h3>
+                <p>
+                    <strong>Fortalezas:</strong> Buen ambiente laboral y miembros que están dispuestos a realizar un excelente trabajo.
+                    <strong>Oportunidades:</strong> Servicio a domicilio y la posibilidad de implementar una página para la venta de repuestos de forma digital.
+                    <button onclick="window.location.href='tienda.html'" class="boton-tienda">N.S Online</button>
+                    <strong>Debilidades:</strong> Fondo limitado para la inversión inicial de la cooperativa.
+                    <strong>Amenazas:</strong> Falta de confianza en los clientes durante los primeros días.
+                </p>
+            </div>
+
+            <div class="detalle">
+                <h3>Estrategias de Marketing</h3>
+                <p>Usamos las redes sociales y hacemos promociones para captar clientes, como descuentos en servicios. Esto incluye estudiar qué hace la competencia y entender a los clientes para poder acercarnos mejor a ellos.</p>
+            </div>
+
+            <div class="detalle">
+                <h3>Grupos y Roles</h3>
+                <p>Contamos con grupos que varian segun las tareas que se deben realizar, como el área de repuestos, la atención en el taller, y el servicio a domicilio. Esto permite que cada uno tenga su rol y sepa bien qué le tiene que hacer, lo que hace que el trabajo sea más fluido.</p>
+                <p><Strong>Tarea explícita:</Strong>Es toda aquella que podemos ver</p>
+                <p><strong>Tarea implícita:</strong>Es lo que no podemos ver, lo que pasa en cada uno de los miembros del grupo, por ejemplo, superar el miedo cuando aparece la necesidad de cambiar formas de conducta y experiencias para enfrentarse a situaciones nuevas.</p>
+            </div>
+
+            <div class="detalle">
+                <h3>Liderazgo</h3>
+                <p>Empleamos un estilo de liderazgo participativo, donde cada miembro aporta ideas para mejorar la productividad y rendimiento de cada integrante. Además se les ponen metas u objetivos y se les reconoce cada que hagan algo bien.</p>
+            </div>
+
+            <div class="detalle">
+                <h3>Motivación</h3>
+                <p>Cuando los miembros están motivados, tienden a estar más satisfechos con su trabajo. La motivación puede provenir de diversas fuentes, como la adecuación al puesto, reconocimiento de los logros y la mejora de condiciones. Esto no solo aumenta la motivación, sino que tambien contribuye a un mayor nivel de satisfacción laboral</p>
+            </div>
+
+            <div class="detalle">
+                <h3>Comunicación</h3>
+                <p>En la cooperativa, la comunicación que empleamos es oral y no verbal, ya que por el trabajo que se realiza es importante estar siempre informados entre cada integrante, como así tambien con los clientes. Y la comunicación no verbal la implementamos en forma de señalizaciones en todo el taller, para ordenar y ubicar herramientas y repuestos</p>
+            </div>
+
+            <div class="detalle">
+                <h3>Trabajo en Equipo</h3>
+                <p>El trabajo en equipo es importante, ya que entre todos colaboramos y compartimos ideas, lo que nos permite resolver los problemas juntos. Las reuniones que realizamos nos ayudan a mantenernos al dia.</p>
+            </div>
+
+            <div class="detalle">
+                <h3>Adaptación a Nuevos Integrantes</h3>
+                <p>Siempre recibimos bien a los nuevos integrantes y les damos un periodo de acompañamiento para que se sientan cómodos y puedan integrarse bien con el equipo y las tareas.</p>
+            </div>
+
+            <div class="fin-container">
+                <button onclick="openModal()" class="fin-button">Finalizar</button>
+            </div>
+
+            <div class="publicidad-container">
+                <button onclick="openVideoModal()" class="publicidad-button">Ver Publicidad</button>
+            </div>
+
+         
+            <div id="videoModal" class="modal">
+                <div class="modal-content video-content">
+                    <span class="close" onclick="closeVideoModal()">&times;</span>
+                    <video controls autoplay class="video-player">
+                        <source src="Error en el video" type="video/mp4">
+                        Tu navegador no soporta reproducción de video.
+                    </video>
+                </div>
+            </div>
+
+       
+            <div id="finModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img src="taller.jpg" alt="Logo de N.S Reparaciones" class="logo-fin">
+                    <h2>Fin</h2>
+                    <p>Gracias por ver.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="Cooperativa.js"></script>
+    </div>
+</body>
+</html>

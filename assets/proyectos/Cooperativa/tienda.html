@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.S Reparaciones</title>
+    <link rel="stylesheet" href="Cooperativa.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>N.S Reparaciones</h1>
+        <p>Compra repuestos para tu moto desde la comodidad de tu hogar</p>
+        <footer>
+            <a href="Cooperativa.html" class="boton-regresar">Regresar</a>
+        </footer>
+    </header>
+
+    <!-- Productos -->
+    <section class="productos">
+        <div class="producto">
+            <h2>Filtro de Aire Completo</h2>
+            <img src="./imagenes/filtro.jpg" alt="Filtro de Aire Completo">
+            <p>Precio: $9.000</p>
+            <button class="comprar-btn" data-producto="Filtro de Aire Completo" data-precio="9.000">Comprar</button>
+        </div>
+        <div class="producto">
+            <h2>Bujía de Encendido</h2>
+            <img src="./imagenes/bujia.jpg" alt="Bujía">
+            <p>Precio: $4,000</p>
+            <button class="comprar-btn" data-producto="Bujía" data-precio="4.000">Comprar</button>
+        </div>
+        <div
+            class="producto">
+            <h2>Zapata Freno Delantero 110cc</h2>
+            <img src="./imagenes/zapata delantera.jpg" alt="Zapata Freno Delantero 110cc">
+            <p>Precio: $12.000</p>
+            <button class="comprar-btn" data-producto="Zapata Freno Delantero 110cc" data-precio="12.000">Comprar</button>
+        </div>
+        <div
+            class="producto">
+            <h2>Zapata Freno Trasero 110cc</h2>
+            <img src="./imagenes/zapata trasera.jpg trasera.jpg" alt="Zapata Freno Trasero 110cc">
+            <p>Precio: $12.000</p>
+            <button class="comprar-btn" data-producto="Zapata Freno Trasero 110cc" data-precio="12.000">Comprar</button>
+        </div>
+        <div
+            class="producto">
+            <h2>Kit Reparación de Carburador 110cc</h2>
+            <img src="./imagenes/carburador.jpg" alt="Kit Reparación de Carburador 110cc">
+            <p>Precio: $6.000</p>
+            <button class="comprar-btn" data-producto="Kit Reparación de Carburador 110cc" data-precio="6.000">Comprar</button>
+        </div>
+        <div
+            class="producto">
+            <h2>Rodamiento Delantero Eje Fino</h2>
+            <img src="./imagenes/rodamiento.jpg" alt="Rodamiento Delantero Eje Fino">
+            <p>Precio: $7.000 c/u</p>
+            <button class="comprar-btn" data-producto="Rodamineto Delantero Eje Fino" data-precio="7.000 c/u">Comprar</button>
+        </div>
+        <div
+            class="producto">
+            <h2>Kit Transmisión 110cc</h2>
+            <img src="./imagenes/transimision.jpg" alt="Kit de transimisión 110cc">
+            <p>Precio: $37.000</p>
+            <button class="comprar-btn" data-producto="Kit de transimisión" data-precio="37.000">Comprar</button>
+        </div>
+        <div
+            class="producto">
+            <h2>Discos de Embrague 110cc (3 discos)</h2>
+            <img src="./imagenes/embrague 3.jpg 3.jpg" alt="Discos de Embrague 110cc (3 discos)">
+            <p>Precio: $7.000</p>
+            <button class="comprar-btn" data-producto="Discos de Embrague 110cc (3 discos)" data-precio="7.000">Comprar</button>
+        </div>
+        <div
+            class="producto">
+            <h2>Discos de Embrague 110cc (4 discos)</h2>
+            <img src="./imagenes/embrague 4.jpg" alt="Discos de Embrague 110cc (4 discos)">
+            <p>Precio: $8.000</p>
+            <button class="comprar-btn" data-producto="Discos de Embrague 110cc (4 discos)" data-precio="8.000">Comprar</button>
+        </div>
+        <div
+            class="producto">
+            <h2>LEDS de Posición</h2>
+            <img src="./imagenes/leds.jpg" alt="LEDS de Posición">
+            <p>Precio: $1.000 c/u</p>
+            <button class="comprar-btn" data-producto="LEDS de Posición" data-precio="1.000 c/u">Comprar</button>
+        </div>
+    </section>
+    <script>
+        
+        document.querySelectorAll('.comprar-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const nombreProducto = button.getAttribute('data-producto');
+                const precioProducto = button.getAttribute('data-precio');
+                window.location.href = `carrito.html?producto=${encodeURIComponent(nombreProducto)}&precio=${encodeURIComponent(precioProducto)}`;
+            });
+        });
+    </script>
+</body>
+</html>

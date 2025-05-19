@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Compra</title>
+    <link rel="stylesheet" href="Cooperativa.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>¡Gracias por tu compra!</h1>
+        <p>Has agregado el producto a tu carrito con éxito.</p>
+    </header>
+
+    <!-- Detalles de la compra -->
+    <section class="confirmacion-compra">
+        <h2>Detalles del Pedido</h2>
+        <p>Producto: <span id="producto-comprado">Nombre del producto</span></p>
+        <p>Precio: <span id="precio-producto">$--</span></p>
+        <p>En breve, recibirás un correo electrónico con la confirmación de tu pedido.</p>
+    </section>
+
+   
+    <footer>
+        <a href="tienda.html" class="boton-regresar">Regresar a la Tienda</a>
+    </footer>
+
+    <script>
+       
+        const urlParams = new URLSearchParams(window.location.search);
+        const producto = urlParams.get('producto');
+        const precio = urlParams.get('precio');
+        document.getElementById('producto-comprado').textContent = producto;
+        document.getElementById('precio-producto').textContent = precio ? `$${precio}` : 'Desconocido';
+    </script>
+</body>
+</html>
